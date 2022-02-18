@@ -9,7 +9,7 @@ CFonts.say('Jhusi\nTe Amo\nJaashi', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`Gracias a toda la gente que me apoyó, los amo <3`, {
+CFonts.say(`Gracias a toda la gente que me apoya, los amo UwU`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
