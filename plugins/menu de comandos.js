@@ -287,7 +287,6 @@ let menu =`
 ┣ ඬ⃟👑 _${usedPrefix}unbanchat2_
 ┣ ඬ⃟👑 _${usedPrefix}bc *texto*_
 ┣ ඬ⃟👑 _${usedPrefix}bcgc *texto*_
-┣ ඬ⃟👑 _${usedPrefix}leavegc_
 ┣ ඬ⃟👑 _${usedPrefix}bcbot *texto*_
 ┣ ඬ⃟👑 _${usedPrefix}setbye *@tag*_
 ┣ ඬ⃟👑 _${usedPrefix}banuser *@tag*_
