@@ -31,7 +31,7 @@ let handler = async (m, { conn, command, text }) => {
 handler.help = ['play', 'play2'].map(v => v + ' <canción >')
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
-handler.group = false
+handler.group = true
 
 handler.exp = 0
 handler.registrar = false
