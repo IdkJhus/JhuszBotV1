@@ -289,7 +289,7 @@ let menu =`
 ┣ ඬ⃟👑 _${usedPrefix}restart_
 ┣ ඬ⃟👑 _${usedPrefix}banlist_
 ┣ ඬ⃟👑 _${usedPrefix}virtext1_
-┣ ඬ⃟👑 _${usedPrefix}banchat2_
+┣ ඬ⃟👑 _${usedPrefix}ownerban_
 ┣ ඬ⃟👑 _${usedPrefix}actualizar_
 ┣ ඬ⃟👑 _${usedPrefix}CajaFuerte_
 ┣ ඬ⃟👑 _${usedPrefix}unbanchat2_
