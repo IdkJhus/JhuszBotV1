@@ -290,7 +290,7 @@ module.exports = {
             if (!['unbanuser.js', 'inv.js', 'link.js', 'creator.js', 'profile.js'].includes(name) && user && user.banned && !isROwner) {
               if (!opts['msgifbanned']) m.reply(`*⚠️ ESTAS BANEADO ⚠️* ${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
 
-*👉🏻 Puedes contactar al propietario del Bot si crees que se trata de un error o para charlar sobre tu desbaneo*
+*👉🏻 Puedes contactar a Jhusz si crees que esto es un error :v*
 
 ${global.owner.map((v, i) => '*Contacto ' + (i + 1) + ':* wa.me/' + v).join('\n')}
 `.trim())
