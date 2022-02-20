@@ -307,8 +307,11 @@ let menu =`
 ┣ ඬ⃟👑 _${usedPrefix}setwelcome *@tag*_
 ┣ ඬ⃟👑 _${usedPrefix}enable *autoread*_
 ┣ ඬ⃟👑 _${usedPrefix}disable *autoread*_
-┣ ඬ⃟👑 _${usedPrefix}disable *leavegc*_
-┣ ඬ⃟👑 _${usedPrefix}disable *antispam*_
+┣ ඬ⃟👑 _${usedPrefix}*leavegc*_
+┣ ඬ⃟👑 _${usedPrefix}setbotbio_
+┣ ඬ⃟👑 _${usedPrefix}setbotname_
+┣ ඬ⃟👑 _${usedPrefix}setbotpp_
+┣ ඬ⃟👑 _${usedPrefix}inspect_
 ┗━━━━━━━━━━━━━┛`.trim()
 let mentionedJid = [who]
 conn.send3ButtonImg(m.chat, pp, menu, '©Jhusz X-X', '𝙼𝙴𝙽𝚄 𝚂𝙸𝙼𝙿𝙻𝙴', `#menusimple`, '𝙼𝙴𝙽𝚄 𝙰𝚄𝙳𝙸𝙾𝚂', `#menuaudios`, 'INSTAGRAM', `#grupos`, m, false, { contextInfo: { mentionedJid }})   
