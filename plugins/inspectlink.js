@@ -16,9 +16,9 @@ ${res.id}
 *Título cambiado * por @${res.subjectOwner.split`@`[0]} en *${formatDate(res.subjectTime * 1000)}*`: ''}${res.descOwner ? `
 *Descripción cambiada* por @${res.descOwner.split`@`[0]} en *${formatDate(res.descTime * 1000)}*` : ''}
 *Número de integrantes:* ${res.size}
-*Miembros que se unieron*: ${res.participants ? '\n' + res.participants.map((user, i) => ++i + '. @' + user.id.split`@`[0]).join('\n').trim() : 'Tidak ada'}
+*Miembros que se unieron*: ${res.participants ? '\n' + res.participants.map((user, i) => ++i + '. @' + user.id.split`@`[0]).join('\n').trim() : 'No hay ninguno miembro'}
 ${res.desc ? `*Descripción actual del grupo:*
-${res.desc}` : '*Tidak ada Deskripsi*'}
+${res.desc}` : '*Sin descripción*'}
 
 `
 handler.help = ['inspect <chat.whatsapp.com>']
