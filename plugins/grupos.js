@@ -1,9 +1,9 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
-*Hola 👋🏻, unete a los grupos oficiales para pasar un rato agradable usando el Bot o platicando con la familia de Jhusz-Bot*
+*Hola 👋🏻, aquí encontrarás el Instagram oficial de mi owner owo*
 
-*_➤ Grupos oficiales del Bot:_*
-*_1.-_* *https://chat.whatsapp.com/K1qdmBjJpUJ0Uw2V9YzGYi*
+*_➤ Instagram:_*
+*_1.-_* *https://www.instagram.com/idk_jhuz/*
 `.trim() 
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 Jhusz X-X 🔥*', 'status@broadcast')
