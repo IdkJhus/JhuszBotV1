@@ -3,7 +3,7 @@ let handler = async (m, { conn, args: [event], text }) => {
     let who = mentions ? conn.parseMention(mentions) : []
     let participants = who.length ? who : [m.sender]
     let action = false
-    m.reply(`Simulando ${event}...`)
+    m.reply(`Simulating ${event}...`)
     switch (event.toLowerCase()) {
         case 'add':
         case 'invite':
