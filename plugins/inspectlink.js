@@ -12,25 +12,15 @@ let handler = async (m, { conn, text }) => {
 -- [Group Link Inspector] --
 ${res.id}
 *Nombre del Grupo:* ${res.subject}
-*Creado* por @${res.id.split('-')[0]} pada *${formatDate(res.creation * 1000)}*${res.subjectOwner ? `
-*Judul diubah* oleh @${res.subjectOwner.split`@`[0]} pada *${formatDate(res.subjectTime * 1000)}*`: ''}${res.descOwner ? `
-*Deskripsi diubah* oleh @${res.descOwner.split`@`[0]} pada *${formatDate(res.descTime * 1000)}*` : ''}
-*Jumlah Member:* ${res.size}
-*Member yang diketahui join*: ${res.participants ? '\n' + res.participants.map((user, i) => ++i + '. @' + user.id.split`@`[0]).join('\n').trim() : 'Tidak ada'}
-${res.desc ? `*Deskripsi:*
+*Creado* en @${res.id.split('-')[0]} en *${formatDate(res.creation * 1000)}*${res.subjectOwner ? `
+*Título cambiado * por @${res.subjectOwner.split`@`[0]} en *${formatDate(res.subjectTime * 1000)}*`: ''}${res.descOwner ? `
+*Descripción cambiada* por @${res.descOwner.split`@`[0]} en *${formatDate(res.descTime * 1000)}*` : ''}
+*Número de integrantes:* ${res.size}
+*Miembros que se unieron*: ${res.participants ? '\n' + res.participants.map((user, i) => ++i + '. @' + user.id.split`@`[0]).join('\n').trim() : 'Tidak ada'}
+${res.desc ? `*Descripción actual del grupo:*
 ${res.desc}` : '*Tidak ada Deskripsi*'}
 
-*JSON Version*
-\`\`\`${JSON.stringify(res, null, 1)}\`\`\`
-`.trim()
-  let pp = await conn.getProfilePicture(res.id).catch(console.error)
-  if (pp) conn.sendFile(m.chat, pp, 'pp.jpg', null, m)
-  m.reply(caption, false, {
-    contextInfo: {
-      mentionedJid: conn.parseMention(caption)
-    }
-  })
-}
+`
 handler.help = ['inspect <chat.whatsapp.com>']
 handler.tags = ['tools']
 
