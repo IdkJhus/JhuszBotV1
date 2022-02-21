@@ -2,8 +2,8 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, usedPrefix }) => {
 let who = m.sender
-let pp = await(await fetch('https://i.imgur.com/NtB440A.jpg')).buffer()
-let kai = await(await fetch('https://i.imgur.com/NtB440A.jpg')).buffer()
+let pp = await(await fetch('https://i.imgur.com/NtB440A')).buffer()
+let kai = await(await fetch('https://i.imgur.com/NtB440A')).buffer()
 let text = `*https://github.com/IdkJhus/JhuszBotV1*`.trim()
 conn.reply(m.chat, text, m, { thumbnail: kai, contextInfo: {
 mentionedJid: [who],
