@@ -28,8 +28,8 @@ let handler = async (m, { conn, command }) => {
 		);
 	else throw json;
 };
-handler.help = ["hug", "pat", "wink"];
+handler.help = ["hug", "pat", "wink", "kiss"];
 handler.tags = ["fun"];
-handler.command = /^(hug|pat|wink)$/i;
+handler.command = /^(hug|pat|wink|kiss)$/i;
 
 module.exports = handler;
