@@ -30,6 +30,8 @@ Para activar algunos comandos como el #añadir y #sacar el propietario del Bot d
 Si instalas el Bot con GitHub para obtener nuevamente el codigo QR, escribe en el termux: 
 rm session.data.json 
 npm start
+
+(POR EL MOMENTO ES BOT DE USO PERSONAL, TODO DEBIDO A UN ERROR DE PROGRAMACIÓN, LES ESTARÉ ENSEÑANDO COMO CAMBIAR LOS NÚMEROS OWNERS PARA QUE PUEDAN UTILIZARLO SIN PROBLEMA ALGUNO EN LO QUE ARREGLO EL PROBLEMA EN GENERAL)
 `.trim()) 
 handler.help = ['instalarbot']
 handler.tags = ['info']
