@@ -770,8 +770,8 @@ Cla
 
 `.trim() 
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 THE SHADOW BROKERS - BOT 🔥*', 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 JHUSZ X-X*', 'status@broadcast')
 }
-handler.command = /^(grupos|gruposofc|gruposofc)$/i
+handler.command = /^(buzon|buzoneo|buzones)$/i
 
 module.exports = handler
