@@ -122,7 +122,7 @@ global.reloadHandler = function () {
     conn.off('CB:action,,call', conn.onCall)
   }
   conn.welcome = '┏━━━━━━━━━━━━\n┃──〘 *WELCOME* 〙──\n┃━━━━━━━━━━━━\n┃ *_✨Que onda paps, como las carga? Bienvenido a este grupo chill, espero te guste o sino vete alv :v  🔰_*  \n┃\n┗━━━━━━━━━━━'
-  conn.bye = '┏━━━━━━━━━━━━\n┃──〘 *ADIOS* 〙───\n┃━━━━━━━━━━━━\n┃ *☠ A pedir pene a otro lado Bv  *\n┗━━━━━━━━━━'
+  conn.bye = '┏━━━━━━━━━━━━\n┃──〘 *ADIOS* 〙───\n┃━━━━━━━━━━━━\n┃ ☠ *A pedir pene a otro lado Bv*\n┗━━━━━━━━━━'
   conn.spromote = '@user Bienvenido al olimpo de los dioses 7u7'
   conn.sdemote = '@user Ni modo qlo, pa´la otra será :v'
   conn.handler = handler.handler
