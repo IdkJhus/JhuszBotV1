@@ -17,7 +17,7 @@ let _thumb = {}
   conn.sendMessage(m.chat, `*⏯ ️Descargador By ©Jhusz X-X ⏯️*\n\n*🔥Titulo:* ${title}\n*📂Tamaño del archivo:* ${filesizeF}` , 'conversation', {quoted: m, thumbnail: y, contextInfo:{externalAdReply: {title: 'Simple WhatsApp bot', body: `© ${conn.user.name}`, sourceUrl: 'enviando...', thumbnail: y}}})
  conn.sendFile(m.chat, dl_link, `By ${conn.user.name}.mp4`, `
  *${title}*
- *©The Shadow Brokers - Bot*
+ *©Jhusz X-X*
 `.trim(), m, false, {
   
 ptt: false, duration: 999999999999, thumbnail: y , asDocument: chat.useDocument})
