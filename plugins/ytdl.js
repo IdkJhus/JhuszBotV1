@@ -10,7 +10,7 @@ let chat = global.DATABASE.data.chats[m.chat]
  let y = fs.readFileSync('./Menu2.jpg')
 
 
-conn.sendMessage(m.chat, `*⏯ ️Descargador By ©Jhusz X-X ⏯️*\n\n*🔥Titulo:* ${title}\n*📂Tamaño del archivo:* ${filesizeF}` , 'conversation', {quoted: m, thumbnail: global.thumb, contextInfo:{externalAdReply: {title: 'NoTJhusz?', body: `© ${conn.user.name}`, sourceUrl: 'enviando...', thumbnail: y}}})
+conn.sendMessage(m.chat, `*⏯ ️Descargador By ©Jhusz X-X ⏯️*\n\n*🔥Titulo:* ${title}\n*📂Tamaño del archivo:* ${filesizeF}` , 'conversation', {quoted: m, thumbnail: global.thumb, contextInfo:{externalAdReply: {title: 'Everything good, right?', body: `© ${conn.user.name}`, sourceUrl: 'enviando...', thumbnail: y}}})
 conn.sendFile(m.chat, dl_link , `By ${conn.user.name}.mp3`, m, false, {ptt: true, duration: 999999999999, asDocument: chat.useDocument})
 conn.sendFile(m.chat, dl_link , `By ${conn.user.name}.mp3`, m)
 }
