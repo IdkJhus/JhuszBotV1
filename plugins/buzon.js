@@ -72,7 +72,7 @@ Buzón directo
 Se interrumpe con *
 Prede: 1234# o 2010#
 --------------------------------------------------------
-Honduras +506
+Costa Rica +506
 Compañía: Claro
 Buzón directo
 Se interrumpe con #
