@@ -8,6 +8,6 @@ let info = `
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 Jhusz X-X 🔥*', 'status@broadcast')
 }
-handler.command = /^(grupos|gruposofc|gruposofc)$/i
+handler.command = /^(ig|igofc|instagram)$/i
 
 module.exports = handler
