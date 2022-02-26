@@ -1,9 +1,8 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
     let info = `
-    *Tonyx OFC*
+    *⍣𝑻𝒐𝒏𝒚𝒙|ɴʙᴊ ×͜×⍣*
     El ma jakel
     ╔════⪼ཊ༼⚚༿𖤍༾⚚༽ཏ⪻════╗
-\n⍣𝑻𝒐𝒏𝒚𝒙|ɴʙᴊ ×͜×⍣\n
 Canal de YT: https://www.youtube.com/channel/UC_O1R_T3kc1Yn5ioJDWhiww
 El ma jakel de iutu oiste elmano
     ╚════⪼ཊ༼⚚༿𖤍༾⚚༽ཏ⪻════╝
