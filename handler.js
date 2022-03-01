@@ -178,7 +178,7 @@ module.exports = {
           if (!'antiToxic' in chat) chat.antiToxic = false
         } else global.DATABASE._data.chats[m.chat] = {
           isBanned: false,
-          welcome: true, 
+          welcome: false, 
           detect: false,
           sWelcome: "",
           sBye: '',
