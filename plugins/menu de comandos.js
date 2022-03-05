@@ -157,6 +157,7 @@ let menu =`
 ┃ *<CREADORES/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟🧧 _${usedPrefix}s_
+┣ ඬ⃟🧧 _${usedPrefix}take paquete|autor_
 ┣ ඬ⃟🧧 _${usedPrefix}sticker_
 ┣ ඬ⃟🧧 _${usedPrefix}semoji_
 ┣ ඬ⃟🧧 _${usedPrefix}wasted_
