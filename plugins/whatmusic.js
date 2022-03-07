@@ -4,7 +4,7 @@ let axios = require('axios')
 let handler = async (m, { conn, usedPrefix, command }) => {
   let q = m.quoted ? m.quoted : m
   let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
-  if (!/video|audio/.test(mime)) throw `Reply to the music you want to find with a reply *${usedPrefix + command}*`
+  if (!/video|audio/.test(mime)) throw `Responda a la canción que quiere encontrar*${usedPrefix + command}*`
  m.reply(global.wait)
 				const bodyForm = new FormData()
 			        bodyForm.append('audio', await q.download(), 'music.mp3')
@@ -18,9 +18,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
                 		data: bodyForm
             			})
                 		.then(({data}) =>{
-				  m.reply(`*_Data Found!_*\n\n*Title* : ${data.data.title}\n*Artists* : ${data.data.artists}\n*Genre* : ${data.data.genre}\n*Album* : ${data.data.album}\n*Release Date* : ${data.data.release_date}`)
+				  m.reply(`*_Información encontrada!_*\n\n*Título* : ${data.data.title}\n*Artista* : ${data.data.artists}\n*Genero* : ${data.data.genre}\n*Album* : ${data.data.album}\n*Fecha de lanzamiento* : ${data.data.release_date}`)
 				}).catch(() => {
-				m.reply('*_Song not found!_*')
+				m.reply('*_No se encontró el nombre_*')
 				})
 				
 }
