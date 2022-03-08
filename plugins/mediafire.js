@@ -31,7 +31,8 @@ try {
   if (text.endsWith('.opus/file')) return conn.sendFile(m.chat, file, res.data.name_file + '.opus', '', m, false, { asDocument: true })
   if (text.endsWith('.webm/file')) return conn.sendFile(m.chat, file, res.data.name_file + '.webm', '', m, false, { asDocument: true })
   if (text.endsWith('.mkv/file')) return conn.sendFile(m.chat, file, res.data.name_file + '.mkv', '', m, false, { asDocument: true })
-
+  if (text.endsWith('.apk/file')) return conn.sendFile(m.chat, file, res.data.name_file + '.apk', '', m, false, { asDocument: true })
+  if (text.endsWith('.exe/file')) return conn.sendFile(m.chat, file, res.data.name_file + '.exe', '', m, false, { asDocument: true })
    }).catch(() => {
   m.reply('Error en el servidor!')
 })
