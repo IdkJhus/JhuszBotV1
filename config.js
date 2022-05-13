@@ -1,5 +1,5 @@
 global.DeveloperMode = 'false' //true Or false
-global.owner = ['50257681618', '50230118401','50585015755']
+global.owner = ['50257681618', '50230118401','50585015755','50251731036']
 
 // Nota: Puedes contactarme si necesitas ayuda con algo al +5219996125657 (este es mi numero personal/real bloqueo personas que no sean temas de la instalación)
 // => Solo dudas sobre la instalación, temas generales contactarme al +17722386341 o al +14503280343
