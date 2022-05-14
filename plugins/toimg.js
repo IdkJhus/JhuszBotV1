@@ -1,57 +1,15 @@
-const { spawn } = require('child_process')
-const util = require('util')
-const { MessageType } = require('@adiwajshing/baileys')
-let { webp2png } = require('../lib/webp2mp4')
-
-let handler = async (m, { conn, command, usedPrefix }) => {
-  if (!global.support.convert &&
-      !global.support.magick &&
-      !global.support.gm) {
-      if (!m.quoted) throw `*🔰 Responda a un sticker con el comando* *${usedPrefix + command}*`
-      let mime = m.quoted.mimetype || ''
-      if (!/webp/.test(mime)) throw `*🔰 Responda a un sticker con el comando* *${usedPrefix + command}*`
-      let media = await m.quoted.download()
-      let out = Buffer.alloc(0)
-      if (/webp/.test(mime)) {
-          out = await webp2png(media)
-      }
-      await conn.sendFile(m.chat, out, 'out.png', '*DONE*', m, false, {
-  thumbnail: Buffer.alloc(0)
-      })
-      return
-  }
-  if (!m.quoted) return conn.reply(m.chat, 'Responda a un sticker!', m)
-  let q = { message: { [m.quoted.mtype]: m.quoted } }
-  if (/sticker/.test(m.quoted.mtype)) {
-    let sticker = await conn.downloadM(q)
-    if (!sticker) throw sticker
-    let bufs = []
-    const [_spawnprocess, ..._spawnargs] = [...(global.support.gm ? ['gm'] : global.support.magick ? ['magick'] : []), 'convert', 'webp:-', 'png:-']
-    let im = spawn(_spawnprocess, _spawnargs)
-    im.on('error', e => conn.reply(m.chat, util.format(e), m))
-    im.stdout.on('data', chunk => bufs.push(chunk))
-    im.stdin.write(sticker)
-    im.stdin.end()
-    im.on('exit', () => {
-      conn.sendMessage(m.chat, Buffer.concat(bufs), MessageType.image, {
-        quoted: m
-      })
-    })
-  }
+import { webp2png } from '../lib/webp2mp4.js'
+let handler = async (m, { conn, usedPrefix, command }) => {
+const notStickerMessage = `*[❗𝐈𝐍𝐅𝐎❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙰 𝙰𝙻 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙴 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙸𝚁 𝙴𝙽 𝙸𝙼𝙰𝙶𝙴𝙽 𝙲𝙾𝙽 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command}*`
+if (!m.quoted) throw notStickerMessage
+const q = m.quoted || m
+let mime = q.mediaType || ''
+if (!/sticker/.test(mime)) throw notStickerMessage
+let media = await q.download()
+let out = await webp2png(media).catch(_ => null) || Buffer.alloc(0)
+await conn.sendFile(m.chat, out, 'error.png', null, m)
 }
 handler.help = ['toimg (reply)']
-handler.tags = ['General']
-handler.command = /^toimg|img|jpg$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-
-module.exports = handler
-
+handler.tags = ['sticker']
+handler.command = ['toimg']
+export default handler
