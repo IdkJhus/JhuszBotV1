@@ -47,11 +47,12 @@ let menu =`
 »𝐄𝐣𝐞𝐦𝐩𝐥𝐨: .𝐨𝐰𝐧𝐞𝐫 𝐦𝐞𝐧𝐮
 `.trim()
 let mentionedJid = [who]
+conn.send3ButtonImg(m.chat, pp, menu, '©𝐉𝐡𝐮𝐬𝐳ᙆ  ᷦ×͜×', '𝙼𝙴𝙽𝚄 𝚂𝙸𝙼𝙿𝙻𝙴', `#menusimple`, '𝙼𝙴𝙽𝚄 𝙰𝚄𝙳𝙸𝙾𝚂', `#menuaudios`, '𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼', `#igowner`, m, false, { contextInfo: { mentionedJid }})   
 //await await await await await await conn.sendFile(m.chat, vn, 'mariana.mp3', null, m, true, {
 //type: 'audioMessage', 
 //ptt: true 
 //})
 }
-handler.command = /^(ownermenu)$/i
+handler.command = /^(ownermenu|menuowner|ownerm|om)$/i
 handler.fail = null
 module.exports = handler
