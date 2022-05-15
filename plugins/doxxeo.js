@@ -20,7 +20,7 @@ let handler = async (m, { conn }) => {
    let speed = `${neww - old}`
    let finish = `*_✅ Persona doxxeada con éxito_*\n\n*_Tiempo: ${speed} segundos!_*
 *RESULTADOS:*
-*Ip:* 92.28.211.234
+*Ip:* 192.168.26.34
 *N:* 43 7462
 *W:* 12.4893
 *SS NUMBER:* 6979191519182016
