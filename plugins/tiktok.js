@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
   if (!url) throw '*Fallo al detectar la URL*'
   await conn.sendFile(m.chat, url, 'error.mp4', `
    *🔰 Aqui tienes el tiktok*
-_©The Shadow Brokers - Bot_
+_©Jhusz X-X_
 `.trim(), m)
 }
 handler.help = ['tiktok'].map(v => v + ' <url>')
