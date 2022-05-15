@@ -4,7 +4,7 @@ let info = `
 Actualizados
 ╔════⪼ཊ༼⚚༿𖤍༾⚚༽ཏ⪻════╗
 Lista by: ⍣𝑻𝒐𝒏𝒚𝒙 Vcf
-•Incluído By @Jhusz Vcf
+•Incluído By @𝐉𝐡𝐮𝐬𝐳ᙆ  ᷦ×͜×
 ---------------------------
 
 
