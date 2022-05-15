@@ -2,8 +2,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
 *Mayor Lista de Buzones*
 Actualizados
-Mayor Lista de Buzones
-Actualizados
 ╔════⪼ཊ༼⚚༿𖤍༾⚚༽ཏ⪻════╗
 Lista by: ⍣𝑻𝒐𝒏𝒚𝒙 Vcf
 •Incluído By @Jhusz Vcf
