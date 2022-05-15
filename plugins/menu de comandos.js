@@ -14,14 +14,9 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let username = conn.getName(who)
 //let vn = './media/mariana.mp3'
 let menu =`
-╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
-║═ *JHUSZ X-X*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *✨𝗛ola, ${username}!!*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-║➤ *Modificador del Bot: NotJhusz?* 
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-╰══╡✯✯✯✯✯✯✯✯╞══╯
+
+*✨𝗛ola, ${username}!!*
+
 ┏━━━━━━━━━━━━━┓
 ┃ *<REPORTA FALLOS EN ALGÚN COMANDO/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
