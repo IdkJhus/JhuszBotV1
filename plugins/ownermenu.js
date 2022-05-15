@@ -52,6 +52,6 @@ let mentionedJid = [who]
 //ptt: true 
 //})
 }
-handler.command = /^(owner menu)$/i
+handler.command = /^(ownermenu)$/i
 handler.fail = null
 module.exports = handler
