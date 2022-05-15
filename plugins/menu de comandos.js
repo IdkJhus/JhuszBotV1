@@ -16,6 +16,7 @@ let username = conn.getName(who)
 let menu =`
 
 *✨𝗛ola, ${username}!!*
+»𝙉𝙤𝙩𝙅𝙝𝙪𝙯ᙆ  ᷦ×͜×
 
 ┏━━━━━━━━━━━━━┓
 ┃ *<REPORTA FALLOS EN ALGÚN COMANDO/>*
