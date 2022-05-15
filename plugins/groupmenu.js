@@ -48,6 +48,6 @@ conn.send3ButtonImg(m.chat, pp, menu, '©𝐉𝐡𝐮𝐬𝐳ᙆ  ᷦ×͜×', '�
 //ptt: true 
 //})
 }
-handler.command = /^(ownermenu|menuowner|ownerm|om)$/i
+handler.command = /^(groupmenu|menugrupo|groupm|gm)$/i
 handler.fail = null
 module.exports = handler
