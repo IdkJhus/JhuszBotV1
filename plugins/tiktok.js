@@ -1,47 +1,21 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, args, command, usedPrefix }) => {
-  if (!args[0]) throw `*Formato de uso: ${usedPrefix}${command} https://tiktokxxxx*`
-  let { video, description, music, author } = await tiktok(args[0])
-  let url = video.no_watermark || video.with_watermark || video.no_watermark_raw || music
-  if (!url) throw '*Fallo al detectar la URL*'
-  await conn.sendFile(m.chat, url, 'error.mp4', `
-   *🔰 Aqui tienes el tiktok*
-_©Jhusz X-X_
-`.trim(), m)
+import fetch from 'node-fetch'
+let handler = async (m, {command, conn, text, args}) => {
+if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝚃𝙸𝙺𝚃𝙾𝙺 𝙵𝙰𝙻𝚃𝙰𝙽𝚃𝙴, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝙴𝙽 𝙴𝙽𝙻𝙰𝙲𝙴/𝙻𝙸𝙽𝙺 𝙳𝙴 𝙰𝙻𝙶𝚄𝙽 𝚅𝙸𝙳𝙴𝙾 𝙳𝙴 𝚃𝙸𝙺𝚃𝙾𝙺*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*#tiktok https://vm.tiktok.com/ZML42vSnn/*`
+if (command == 'tiktokaudio') {
+let espera = '*[❗𝐈𝐍𝐅𝐎❗] 𝙰𝙶𝚄𝙰𝚁𝙳𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾 𝙴𝙽 𝙻𝙾 𝚀𝚄𝙴 𝙴𝙽𝚅𝙸𝙾 𝚂𝚄 𝙰𝚄𝙳𝙸𝙾 𝙳𝙴 𝚃𝙸𝙺𝚃𝙾𝙺*'
+m.reply(espera)
+let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
+let json = await res.json()
+conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
+if (command == 'tiktok') {
+let espera = '*[❗𝐈𝐍𝐅𝐎❗] 𝙰𝙶𝚄𝙰𝚁𝙳𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾 𝙴𝙽 𝙻𝙾 𝚀𝚄𝙴 𝙴𝙽𝚅𝙸𝙾 𝚂𝚄 𝚅𝙸𝙳𝙴𝙾 𝙳𝙴 𝚃𝙸𝙺𝚃𝙾𝙺*'
+m.reply(espera)
+let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
+let json = await res.json()
+conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `_𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭_`, m)}
 }
-handler.help = ['tiktok'].map(v => v + ' <url>')
+handler.help = ['tiktok' , 'tiktokaudio'].map(v => v + ' <link>')
 handler.tags = ['downloader']
+handler.command = ['tiktok', 'tiktokaudio']
+export default handler
 
-handler.command = /^(tik(tok)?(dl)?)$/i
-
-module.exports = handler
-
-const axios = require('axios')
-async function tiktok(url) {
-  try {
-    let results = {}
-    if (/v[tm]\.tiktok\.com/g.test(url)) {
-      let res = await axios.get(url)
-      url = res.request.res.responseUrl
-    }
-    let key = await axios.get(`https://api.snaptik.site/video-key?video_url=${url}`)
-    key = JSON.parse(JSON.stringify(key.data, null, 2))
-    if (key.status !== 'success') throw key
-    let data = await axios.get(`https://api.snaptik.site/video-details-by-key?key=${key.data.key}`)
-    data = JSON.parse(JSON.stringify(data.data, null, 2))
-    if (data.status !== 'success') throw data
-    results = {
-      author: { ...data.data.author },
-      description: data.data.description,
-      video: {
-        with_watermark: `https://api.snaptik.site/download?key=${data.data.video.with_watermark}&type=video`,
-        no_watermark: `https://api.snaptik.site/download?key=${data.data.video.no_watermark}&type=video`,
-        no_watermark_raw: data.data.video.no_watermark_raw
-      },
-      music: `https://api.snaptik.site/download?key=${data.data.music}&type=music`
-    }
-    return results
-  } catch (e) {
-    throw '*El video esta en privado o el link el incorrecto*'
-  }
-}
