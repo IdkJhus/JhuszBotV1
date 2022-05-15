@@ -11,33 +11,33 @@ let username = conn.getName(who)
 let menu =`
 *✨𝗛ola, ${username}!!*
 
-»𝐀𝐪𝐮𝐢́ 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐫𝐚́𝐬 𝐥𝐨𝐬 𝐝𝐢𝐬𝐭𝐢𝐧𝐭𝐨𝐬 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐝𝐢𝐬𝐩𝐨𝐧𝐢𝐛𝐥𝐞𝐬«
+»𝐀𝐪𝐮𝐢́ 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐫𝐚́𝐬 𝐥𝐨𝐬 𝐝𝐢𝐬𝐭𝐢𝐧𝐭𝐨𝐬 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐝𝐢𝐬𝐩𝐨𝐧𝐢𝐛𝐥𝐞𝐬«💎
 ╔════════════════╗
-💎 _${usedPrefix}admins *texto*_ 
-💎 _${usedPrefix}añadir *numero*_ 
-💎 _${usedPrefix}sacar @tag_
-💎 _${usedPrefix}save *@tag + nombre de contacto*_
-💎 _${usedPrefix}daradmin *@tag*_
-💎 _${usedPrefix}quitaradmin *@tag*_
-💎 _${usedPrefix}grupo *abrir / cerrar*_
-💎 _${usedPrefix}enable welcome_
-💎 _${usedPrefix}disable welcome_
-💎 _${usedPrefix}enable antilink_
-💎 _${usedPrefix}disable antilink_
-💎 _${usedPrefix}enable antilink2_
-💎 _${usedPrefix}disable antilink2_
-💎 _${usedPrefix}enable delete_
-💎 _${usedPrefix}disable  delete_ 
-💎 _${usedPrefix}link_
-💎 _${usedPrefix}notificar *texto*_
-💎 _${usedPrefix}setname *Nuevo nombre del grupo*_
-💎 _${usedPrefix}setdesc *Nueva descripción del grupo*_
-💎 _${usedPrefix}infogrupo_
-💎 _${usedPrefix}invocar *texto*_
-💎 _${usedPrefix}del *responder a un mensaje del bot*_
-💎 _${usedPrefix}fantasmas_
-💎 _${usedPrefix}banchat_
-💎 _${usedPrefix}unbanchat_
+💎.𝐚𝐝𝐦𝐢𝐧𝐬 *𝐭𝐞𝐱𝐭𝐨*
+💎.𝐚ñ𝐚𝐝𝐢𝐫 *𝐧𝐮𝐦𝐞𝐫𝐨*
+💎.𝐬𝐚𝐜𝐚𝐫 @𝐭𝐚𝐠
+💎.𝐬𝐚𝐯𝐞 *@𝐭𝐚𝐠 + 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞 𝐜𝐨𝐧𝐭𝐚𝐜𝐭𝐨*
+💎.𝐩𝐫𝐨𝐦𝐨𝐭𝐞 *@𝐭𝐚𝐠*
+💎.𝐝𝐞𝐦𝐨𝐭𝐞 *@𝐭𝐚𝐠*
+💎.𝐠𝐫𝐮𝐩𝐨 *𝐚𝐛𝐫𝐢𝐫 / 𝐜𝐞𝐫𝐫𝐚𝐫*
+💎.𝐞𝐧𝐚𝐛𝐥𝐞 𝐰𝐞𝐥𝐜𝐨𝐦𝐞
+💎.𝐝𝐢𝐬𝐚𝐛𝐥𝐞 𝐰𝐞𝐥𝐜𝐨𝐦𝐞
+💎.𝐞𝐧𝐚𝐛𝐥𝐞 𝐚𝐧𝐭𝐢𝐥𝐢𝐧𝐤
+💎.𝐝𝐢𝐬𝐚𝐛𝐥𝐞 𝐚𝐧𝐭𝐢𝐥𝐢𝐧𝐤
+💎.𝐞𝐧𝐚𝐛𝐥𝐞 𝐚𝐧𝐭𝐢𝐥𝐢𝐧𝐤𝟐
+💎.𝐝𝐢𝐬𝐚𝐛𝐥𝐞 𝐚𝐧𝐭𝐢𝐥𝐢𝐧𝐤𝟐
+💎.𝐞𝐧𝐚𝐛𝐥𝐞 𝐝𝐞𝐥𝐞𝐭𝐞
+💎.𝐝𝐢𝐬𝐚𝐛𝐥𝐞 𝐝𝐞𝐥𝐞𝐭𝐞
+💎.𝐥𝐢𝐧𝐤
+💎.𝐧𝐨𝐭𝐢𝐟𝐢𝐜𝐚𝐫 *𝐭𝐞𝐱𝐭𝐨*
+💎.𝐬𝐞𝐭𝐧𝐚𝐦𝐞 *𝐍𝐮𝐞𝐯𝐨 𝐧𝐨𝐦𝐛𝐫𝐞 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨*
+💎.𝐬𝐞𝐭𝐝𝐞𝐬𝐜 *𝐍𝐮𝐞𝐯𝐚 𝐝𝐞𝐬𝐜𝐫𝐢𝐩𝐜𝐢ó𝐧 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨*
+💎.𝐢𝐧𝐟𝐨𝐠𝐫𝐮𝐩𝐨
+💎.𝐢𝐧𝐯𝐨𝐜𝐚𝐫 *𝐭𝐞𝐱𝐭𝐨*
+💎.𝐝𝐞𝐥 *𝐫𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐚 𝐮𝐧 𝐦𝐞𝐧𝐬𝐚𝐣𝐞 𝐝𝐞𝐥 𝐛𝐨𝐭*
+💎.𝐟𝐚𝐧𝐭𝐚𝐬𝐦𝐚𝐬
+💎.𝐛𝐚𝐧𝐜𝐡𝐚𝐭
+💎.𝐮𝐧𝐛𝐚𝐧𝐜𝐡𝐚𝐭
 ╚════════════════╝
 »𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐔𝐍𝐈𝐂𝐀𝐌𝐄𝐍𝐓𝐄 𝐏𝐀𝐑𝐀 𝐀𝐃𝐌𝐈𝐍𝐒 𝐃𝐄𝐋 𝐆𝐑𝐔𝐏𝐎«
 `.trim()
