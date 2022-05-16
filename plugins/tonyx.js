@@ -8,7 +8,7 @@ El ma jakel de iutu oiste elmano
     ╚════⪼ཊ༼⚚༿𖤍༾⚚༽ཏ⪻════╝
     `.trim() 
     
-    conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 JHUSZ X-X*', 'status@broadcast')
+    conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 𝐉𝐡𝐮𝐬𝐳ᙆ  ᷦ×͜×*', 'status@broadcast')
     }
     handler.command = /^(Tonyx.06|Tonyx|el ma jakel)$/i
     
