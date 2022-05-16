@@ -1,10 +1,8 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
     let info = `
-    *⍣Zoot Revo⍣*
-    El ma negro
-    ╔════⪼ཊ༼⚚༿𖤍༾⚚༽ཏ⪻════╗
+*⍣Zoot Revo⍣*
 https://www.youtube.com/channel/UC5QIa0PWbCCUUTJa62VDo_g
-    ╚════⪼ཊ༼⚚༿𖤍༾⚚༽ཏ⪻════╝
+Canal de buzoneo y metodos private
     `.trim() 
     
     conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*🔥 𝐉𝐡𝐮𝐬𝐳ᙆ  ᷦ×͜×*', 'status@broadcast')
